@@ -1,0 +1,63 @@
+/* src/components/TestHistory.css */
+.test-history {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.test-history h2 {
+  margin-bottom: 15px;
+}
+
+.test-history table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+.test-history th,
+.test-history td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top; /* Урт текстэд зүгээр */
+}
+
+.test-history th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.test-history tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.status-badge {
+  padding: 3px 8px;
+  border-radius: 12px; /* Бөөрөнхий болгох */
+  color: white;
+  font-size: 0.85em;
+  display: inline-block; /* Span-г block шиг болгох */
+  min-width: 60px; /* Бага зэрэг өргөн */
+  text-align: center;
+}
+
+.status-success {
+  background-color: #28a745;
+} /* Ногоон */
+.status-failure {
+  background-color: #dc3545;
+} /* Улаан */
+.status-running {
+  background-color: #17a2b8;
+} /* Цэнхэр */
+.status-pending {
+  background-color: #ffc107;
+  color: #333;
+} /* Шар */
+
+.url-cell,
+.result-cell {
+  max-width: 250px; /* Хэт урт текстийг хязгаарлах */
+  word-break: break-all; /* Үгээр таслах */
+}
